@@ -24,7 +24,7 @@ Example:
 | Figure Folder | Preview | Figure Title |
 |---------------|---------|-------------|
 | [fig99_01](./figures/fig99_01/) | ![fig99_01](./fig99_01/figure/ar6_wg1_chap3_figure3_4_surface_temp_anomaly.png) | Title of fig99_01 |
-| [fig99_02](./figures/fig99_02/) | link to figure | Title of fig99_02 |
+| [fig99_02](./figures/fig99_02/) | <img src="./fig99_01/figure/ar6_wg1_chap3_figure3_4_surface_temp_anomaly.png" width="200"> | Title of fig99_02 |
 |  |  |  |
 |  |  |  |
 |  |  |  |
