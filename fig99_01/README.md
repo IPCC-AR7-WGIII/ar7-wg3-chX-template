@@ -4,7 +4,7 @@ FIGURE TITLE
 ![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 ![GitHub release](https://img.shields.io/github/v/release/YOUR_ORG/YOUR_REPO?logo=github)
 
-Figure X.X  From the IPCC Working Group I Contribution to the Seventh Assessment Report: Chapter X
+Figure X.X  From the IPCC Working Group III Contribution to the Seventh Assessment Report: Chapter X
 
 ![Figure caption](<REPLACE_WITH_YOUR_IMAGE_PATH>)
 
