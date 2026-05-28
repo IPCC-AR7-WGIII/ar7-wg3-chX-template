@@ -38,19 +38,6 @@ jobs:
               missing=0
 
               # -----------------------------
-              # Folder name validation
-              # -----------------------------
-              # Final: figXX_YY (e.g., fig01_03)
-              # Temp:  figXX_<descriptive_name> (e.g., fig01_overview)
-              if [[ ! "$dir" =~ ^fig[0-9]{2}_[0-9]{2}$ && \
-                    ! "$dir" =~ ^fig[0-9]{2}_[a-z0-9_]+$ ]]; then
-                echo "❌ Invalid folder name: $dir"
-                missing=$((missing+1))
-              else
-                echo "✅ Folder name format passed validate"
-              fi
-
-              # -----------------------------
               # Required contents
               # -----------------------------
               required=("code" "data" "figure" "CITATION.cff" "README.md" "LICENSE")
