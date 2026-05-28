@@ -6,27 +6,30 @@ Chapter 99: chapter title
 
 ## Contents
 
-- [Contents](#contents)
 - [Introduction](#introduction)
+- [Name your repository](#naming)
 - [Repository structure](#respository-structure)
 - [Key concepts](#key-concepts)
 - [The `CITATION.cff` file](#citation)
 - [Controlled vocabulary](#controlled-vocabulary)
 - [Figures](#figures)
 
-# Introduction and Purpose
+# Introduction
 
-This is a template respository for the management and submission of IPCC AR7 figures. This repository is meant to store report figures at the chapter level, along with the data and code necessary to reproduce the figures. We acknowledge that publishing clean code and data is time-consuming, and that many figures don't survive the rounds of reviews, so we're only expecting code and data to be prepared for the Final Government Draft (FGD), not the First Order Draft (FOD) or Second Order Draft (SOD). However, we also know that delaying the data and code preparation process at the last minute will be painful for everyone involved because it will pile on the final publication rush. What we're proposing is a gradual approach to data and code curation, where each draft adds a bit more content to the repository for the sake of building experience and resolving issues in a stress-free environment.
+This is a template respository for the management and submission of IPCC AR7 figures. This repository is meant to store report figures at the chapter level, along with the data, code, and environment information necessary to reproduce the figures. We acknowledge that publishing clean code and data is time-consuming, and that many figures don't survive the rounds of reviews, so we're only expecting code and data to be prepared for the Final Government Draft (FGD), not the First Order Draft (FOD) or Second Order Draft (SOD). At the same time, delaying the data and code preparation process at the last minute will be painful for everyone involved because it will pile on the final publication rush. What we're proposing is a gradual approach to data and code curation, where each draft adds a bit more content to the repository for the sake of building experience and resolving issues in a stress-free environment.
+
+# Name your repository
+
+Please name your repository according to the following convention:  ``ar7-<report>-<draft>-<chapter>``, referring to the Controlled Vocabulary table for the abbreviations. 
 
 # Repository structure
-The repository structure is described below. You should create one repository for each chapter.
-1. fig99_01: 
-  – data: The data/ folder is where you should store data to create the figure. It is meant to be self-contained, and include all information displayed in the figure. The data included here should require no substantial transformation to be used in the figure. This means for example that data units should match figure units.
-  - code: The code/ folder is where you should store the code used to analyse input data and create the data for the figure, if any. If no such code is necessary, simply remove this directory.
-  - figure: The figure/ folder is where you should upload the figure image file and complete 
-2. src: The src/ folder contains shared, reusable code used across multiple figures and analyses in this project. 
-3. env: The env/ folder contains environment specification files and documentation necessary to recreate the software environment used in this project. This ensures that analyses and figures can be reproduced reliably across different systems.
-4. resources: The resources/ folder may be used to store and track datasets, workflows, metadata, or other notes that apply to one or more figures in the chapter. Consider it an add-on space. It should not be used in replacement of the folders described above.
+The repository structure is described below. Please create one repository for each chapter and for each draft.
+- `figX`: The figX/ folder is the main location for storing figure information. It contains three subfolders: data/, code/, and figure/, which are described below. You should duplicate the folder (including subfolders) for each figure in the chapter and name it accordingly (e.g., fig1, fig2, box1fig1).  
+- `data`: The data/ subfolder is where you should store data to create the figure. It is meant to be self-contained, and include all information displayed in the figure. The data included here should require no substantial transformation to be used in the figure. This means for example that data units should match figure units.
+– `code`: The code/ subfolder is where you should store the code used to analyse input data and create the data for the figure, if any. If no such code is necessary, simply remove this directory.
+- `figure`: The figure/ subfolder is where you should upload the figure image file and complete 
+- `env`: The env/ folder contains environment specification files and documentation necessary to recreate the software environment used in this project. This ensures that analyses and figures can be reproduced reliably across different systems.
+- `resources`: The resources/ folder may be used to store and track datasets, workflows, metadata, or other notes that apply to one or more figures in the chapter. Consider it an add-on space. It should not be used in replacement of the folders described above.
 
 # Key concepts
 - By *data*, we mean here the data displayed in the figure, not the source datasets they derive from. Please do not commit large input datasets in this repository;
