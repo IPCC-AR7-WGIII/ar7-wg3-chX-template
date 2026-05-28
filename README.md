@@ -15,7 +15,7 @@ Chapter X: chapter title
 
 # Introduction
 
-This is a template respository for the management and submission of IPCC AR7 figures. This repository is meant to store report figures at the chapter level, along with the data, code, and environment information necessary to reproduce the figures. We acknowledge that publishing clean code and data is time-consuming, and that many figures don't survive the rounds of reviews, so we're only expecting code and data to be prepared for the Final Government Draft (FGD), not the First Order Draft (FOD) or Second Order Draft (SOD). At the same time, delaying the data and code preparation process at the last minute will be painful for everyone involved because it will pile on the final publication rush. What we're proposing is a gradual approach to data and code curation, where each draft adds a bit more content to the repository for the sake of building experience and resolving issues in a stress-free environment.
+This is a template respository for the management and submission of IPCC AR7 figures. This repository is meant to store report figures at the chapter level, along with the data, code, and environment information necessary to reproduce the figures. We acknowledge that publishing clean code and data is time-consuming, and that many figures don't survive the rounds of reviews, so we're only expecting code and data to be prepared for the Final Government Distribution (FGD), not the First Order Draft (FOD) or Second Order Draft (SOD). At the same time, delaying the data and code preparation process at the last minute will be painful for everyone involved because it will pile on the final publication rush. What we're proposing is a gradual approach to data and code curation, where each draft adds a bit more content to the repository for the sake of building experience and resolving issues in a stress-free environment.
 
 # Name your repository
 
@@ -80,7 +80,7 @@ Whenever a template includes fields for `<report>, <draft>, <chapter>` or `<figu
 |             | Zero Order Draft                          | zod         | 
 |             | First Order Draft                         | fod         |
 |             | Second Order Draft                        | sod         |
-|             | Final Government Draft                    | fgd         |
+|             | Final Government Distribution             | fgd         |
 | ``chapter`` |                                           |             |
 |             | Summary for Policymakers                  | spm         |
 |             | Technical Summary                         | ts          |
